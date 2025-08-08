@@ -1,5 +1,6 @@
 import streamlit as st
-from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import pipeline
 import torch
 
 # Load models (cached to avoid reloading on every interaction)
@@ -88,4 +89,5 @@ def main():
                 st.caption(f"BART summary: {len(hf_summary.split())} tokens | T5 summary: {len(t5_summary.split())} tokens")
 
 if __name__ == "__main__":
+
     main()
